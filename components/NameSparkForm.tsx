@@ -21,7 +21,7 @@ function NameSparkForm() {
     stepsRefs.current[index] = el;
   };
   return (
-    <div className="max-w-3xl mx-auto p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl border border-gray-100 dark:border-gray-700 relative overflow-hidden">
+    <div className="">
       {/* Background gradient circles */}
       <div className="absolute -top-20 -right-20 w-60 h-60 bg-blue-100 dark:bg-blue-900 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 dark:bg-indigo-900 rounded-full opacity-20 blur-3xl"></div>
@@ -111,13 +111,13 @@ function NameSparkForm() {
       </div>
 
       {/* Navigation buttons */}
-      <div className="mt-8 flex justify-between">
+      <div className="mt-96 flex justify-between">
         {" "}
         {currentStep > 1 && (
           <Button
             variant="outline"
             onClick={goToPreviousStep}
-            className="px-6 py-2 border border-gray-300 dark:border-gray-700 rounded-lg group transition-all duration-300"
+            className="px-6 py-2 border border-gray-300 dark:border-gray-700 rounded-lg group transition-all duration-300 z-10"
           >
             <span className="mr-2 group-hover:-translate-x-1 inline-block transition-transform duration-200">
               ←
@@ -128,7 +128,7 @@ function NameSparkForm() {
         {currentStep < 5 && (
           <Button
             onClick={goToNextStep}
-            className="ml-auto px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group"
+            className="ml-auto px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group z-10"
           >
             Continue
             <span className="ml-2 group-hover:translate-x-1 inline-block transition-transform duration-200">
