@@ -1,8 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NameSpark - AI-Powered Startup Name Generator
+
+NameSpark is a beautifully animated, multi-step form application that helps entrepreneurs find the perfect name for their startup. The application guides users through a series of steps to understand their business concept, industry, preferred vibe, and optional keywords, then generates creative name suggestions.
+
+## Features
+
+- 🧙‍♂️ Multi-step form with smooth transitions
+- ✨ Beautiful animations powered by GSAP
+- 🎨 Modern UI built with Next.js, Tailwind CSS, and Shadcn/UI
+- 🚀 Responsive design that works on all devices
+- 🔄 Context-based state management
+- 💡 Interactive card selections
+- ⚡ Fast, client-side name generation
+
+First, run the development server:
+
+````bash
+## Technology Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS 4
+- **UI Components**: Shadcn/UI
+- **Animations**: GSAP (GreenSock Animation Platform)
+- **State Management**: React Context API
+- **Dev Tools**: TypeScript, TurboRepo
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+````
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,22 +44,46 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **`/app`** - Next.js app directory with pages and layouts
+- **`/components`** - UI components including form steps
+- **`/lib`** - Utilities, context providers, and animations
+- **`/public`** - Static assets
 
-## Learn More
+## How It Works
 
-To learn more about Next.js, take a look at the following resources:
+1. Users describe their startup concept
+2. They select their industry from visual cards
+3. They choose a vibe/feeling for their brand
+4. They can optionally add specific keywords
+5. The app generates creative name suggestions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Animation Features
+
+- Smooth transitions between form steps
+- Staggered animations for UI elements
+- Interactive hover and click effects
+- Progress bar animation
+- Loading animations during name generation
+
+## Future Enhancements
+
+- Integration with real AI name generation API
+- Domain availability checker
+- Name favoriting and export functionality
+- Social media handle availability
+- Dark mode support
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
